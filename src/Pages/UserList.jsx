@@ -28,11 +28,11 @@ function UserList() {
         stripedRows
         filterDisplay="row"
       >
-        <Column field="name" header="Name" filter filterPlaceholder="Search"></Column>
-        <Column field="username" header="UserName" filter filterPlaceholder="Search"></Column>
-        <Column field="email" header="Email" filter filterPlaceholder="Search"></Column>
-        <Column field="age" header="Age" filter filterPlaceholder="Search"></Column>
-        <Column header="Actions"></Column>
+        <Column field="name" header="Name" filter filterPlaceholder="Search" sortable ></Column>
+        <Column field="username" header="UserName" filter filterPlaceholder="Search" sortable ></Column>
+        <Column field="email" header="Email" filter filterPlaceholder="Search" sortable ></Column>
+        <Column field="age" header="Age" filter filterPlaceholder="Search" sortable ></Column>
+        <Column header="Actions" className="w-60"></Column>
       </DataTable>
     </div>
   );
