@@ -1,0 +1,39 @@
+{
+    "Users": [
+        {
+            "id": 1,
+            "name": "Muhammad Usman",
+            "username": "usman",
+            "email": "usman@gmail.com",
+            "age": "24"
+        },
+        {
+            "id": 2,
+            "name": "Ayesha Khan",
+            "username": "ayeshak",
+            "email": "ayesha.khan@gmail.com",
+            "age": "27"
+        },
+        {
+            "id": 3,
+            "name": "Bilal Ahmed",
+            "username": "bilal_a",
+            "email": "bilal.ahmed@gmail.com",
+            "age": "31"
+        },
+        {
+            "id": 4,
+            "name": "Sara Malik",
+            "username": "saram",
+            "email": "sara.malik@gmail.com",
+            "age": "22"
+        },
+        {
+            "id": 5,
+            "name": "Hamza Tariq",
+            "username": "hamzat",
+            "email": "hamza.tariq@gmail.com",
+            "age": "29"
+        }
+    ]
+}
