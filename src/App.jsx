@@ -1,15 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import UserList from "./Pages/UserList";
 import AddEditUser from "./Pages/AddEditUser";
+import MainLayout from "./Layout/MainLayout";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<UserList />} />
-          <Route path="/add" element={<AddEditUser />} />
-          <Route path="/edit/:id" element={<AddEditUser />} />
+          <Route element={<MainLayout/>}>
+            <Route path="/" element={<UserList />} />
+            <Route path="/add" element={<AddEditUser />} />
+            <Route path="/edit/:id" element={<AddEditUser />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
