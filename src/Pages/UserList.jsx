@@ -1,6 +1,10 @@
 import api from "../apis/axios";
 import { useEffect, useState } from "react";
 
+// DataTables
+import { DataTable } from "primereact/datatable";
+import { Column } from "primereact/column";
+
 function UserList() {
   const [users, setUsers] = useState([]);
 
@@ -13,10 +17,25 @@ function UserList() {
     fetchData();
   }, []);
   return (
-    <div>
-        <h1>user Lists</h1>
+    <div className="card">
+      <DataTable
+        value={users}
+        showGridlines
+        paginator
+        rows={5}
+        rowsPerPageOptions={[5, 10, 25, 50]}
+        size="normal"
+        stripedRows
+        filterDisplay="row"
+      >
+        <Column field="name" header="Name" filter filterPlaceholder="Search"></Column>
+        <Column field="username" header="UserName" filter filterPlaceholder="Search"></Column>
+        <Column field="email" header="Email" filter filterPlaceholder="Search"></Column>
+        <Column field="age" header="Age" filter filterPlaceholder="Search"></Column>
+        <Column header="Actions"></Column>
+      </DataTable>
     </div>
-  )
+  );
 }
 
 export default UserList;
