@@ -1,110 +1,124 @@
 {
-    "Users": [
-        {
-            "id": 1,
-            "name": "Muhammad Usman",
-            "username": "usman",
-            "email": "usman@gmail.com",
-            "age": "24"
-        },
-        {
-            "id": 2,
-            "name": "Ayesha Khan",
-            "username": "ayeshak",
-            "email": "ayesha.khan@gmail.com",
-            "age": "27"
-        },
-        {
-            "id": 3,
-            "name": "Bilal Ahmed",
-            "username": "bilal_a",
-            "email": "bilal.ahmed@gmail.com",
-            "age": "31"
-        },
-        {
-            "id": 4,
-            "name": "Sara Malik",
-            "username": "saram",
-            "email": "sara.malik@gmail.com",
-            "age": "22"
-        },
-        {
-            "id": 5,
-            "name": "Hamza Tariq",
-            "username": "hamzat",
-            "email": "hamza.tariq@gmail.com",
-            "age": "29"
-        },
-         {
-            "id": 6,
-            "name": "Fatima Raza",
-            "username": "fatimar",
-            "email": "fatima.raza@gmail.com",
-            "age": "26"
-        },
-        {
-            "id": 7,
-            "name": "Ali Hassan",
-            "username": "ali_hassan",
-            "email": "ali.hassan@gmail.com",
-            "age": "33"
-        },
-        {
-            "id": 8,
-            "name": "Zainab Sheikh",
-            "username": "zainabs",
-            "email": "zainab.sheikh@gmail.com",
-            "age": "25"
-        },
-        {
-            "id": 9,
-            "name": "Omar Farooq",
-            "username": "omarf",
-            "email": "omar.farooq@gmail.com",
-            "age": "28"
-        },
-        {
-            "id": 10,
-            "name": "Hina Iqbal",
-            "username": "hinai",
-            "email": "hina.iqbal@gmail.com",
-            "age": "23"
-        },
-        {
-            "id": 11,
-            "name": "Kamran Aziz",
-            "username": "kamrana",
-            "email": "kamran.aziz@gmail.com",
-            "age": "35"
-        },
-        {
-            "id": 12,
-            "name": "Nadia Yousuf",
-            "username": "nadiay",
-            "email": "nadia.yousuf@gmail.com",
-            "age": "30"
-        },
-        {
-            "id": 13,
-            "name": "Faisal Mehmood",
-            "username": "faisalm",
-            "email": "faisal.mehmood@gmail.com",
-            "age": "27"
-        },
-        {
-            "id": 14,
-            "name": "Mariam Chaudhry",
-            "username": "mariamc",
-            "email": "mariam.chaudhry@gmail.com",
-            "age": "24"
-        },
-        {
-            "id": 15,
-            "name": "Usman Ghani",
-            "username": "usmang",
-            "email": "usman.ghani@gmail.com",
-            "age": "32"
-        }
-
-    ]
+  "Users": [
+    {
+      "id": "1",
+      "name": "Muhammad Usman",
+      "username": "usman",
+      "email": "usman@gmail.com",
+      "age": "24"
+    },
+    {
+      "id": "2",
+      "name": "Ayesha Khan",
+      "username": "ayeshak",
+      "email": "ayesha.khan@gmail.com",
+      "age": "27"
+    },
+    {
+      "id": "3",
+      "name": "Bilal Ahmed",
+      "username": "bilal_a",
+      "email": "bilal.ahmed@gmail.com",
+      "age": "31"
+    },
+    {
+      "id": "4",
+      "name": "Sara Malik",
+      "username": "saram",
+      "email": "sara.malik@gmail.com",
+      "age": "22"
+    },
+    {
+      "id": "5",
+      "name": "Hamza Tariq",
+      "username": "hamzat",
+      "email": "hamza.tariq@gmail.com",
+      "age": "29"
+    },
+    {
+      "id": "6",
+      "name": "Fatima Raza",
+      "username": "fatimar",
+      "email": "fatima.raza@gmail.com",
+      "age": "26"
+    },
+    {
+      "id": "7",
+      "name": "Ali Hassan",
+      "username": "ali_hassan",
+      "email": "ali.hassan@gmail.com",
+      "age": "33"
+    },
+    {
+      "id": "8",
+      "name": "Zainab Sheikh",
+      "username": "zainabs",
+      "email": "zainab.sheikh@gmail.com",
+      "age": "25"
+    },
+    {
+      "id": "9",
+      "name": "Omar Farooq",
+      "username": "omarf",
+      "email": "omar.farooq@gmail.com",
+      "age": "28"
+    },
+    {
+      "id": "10",
+      "name": "Hina Iqbal",
+      "username": "hinai",
+      "email": "hina.iqbal@gmail.com",
+      "age": "23"
+    },
+    {
+      "id": "11",
+      "name": "Kamran Aziz",
+      "username": "kamrana",
+      "email": "kamran.aziz@gmail.com",
+      "age": "35"
+    },
+    {
+      "id": "12",
+      "name": "Nadia Yousuf",
+      "username": "nadiay",
+      "email": "nadia.yousuf@gmail.com",
+      "age": "30"
+    },
+    {
+      "id": "13",
+      "name": "Faisal Mehmood",
+      "username": "faisalm",
+      "email": "faisal.mehmood@gmail.com",
+      "age": "27"
+    },
+    {
+      "id": "14",
+      "name": "Mariam Chaudhry",
+      "username": "mariamc",
+      "email": "mariam.chaudhry@gmail.com",
+      "age": "24"
+    },
+    {
+      "id": "15",
+      "name": "Usman Ghani",
+      "username": "usmang",
+      "email": "usman.ghani@gmail.com",
+      "age": "32"
+    },
+    {
+      "name": "Fredericka Hawkins",
+      "username": "cinypabyha",
+      "email": "vezuzeset@mailinator.com",
+      "age": 77,
+      "id": "uNXtZ57mZME"
+    },
+    {
+      "name": "August Ellis",
+      "username": "nujab",
+      "email": "zycu@mailinator.com",
+      "age": 29,
+      "id": "PzKZYNAviF4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
