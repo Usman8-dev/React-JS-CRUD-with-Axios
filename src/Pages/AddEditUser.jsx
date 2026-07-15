@@ -7,6 +7,7 @@ import api from "../apis/axios";
 import { InputText } from "primereact/inputtext";
 import { InputNumber } from "primereact/inputnumber";
 import { Button } from "primereact/button";
+import { useEffect } from "react";
 
 function AddEditUser() {
   const navigate = useNavigate();
@@ -23,10 +24,24 @@ function AddEditUser() {
   });
 
   const OnSubmit = async (data) => {
-    // console.log(data);
-    await api.post('/Users', data)
+    if(id){
+      await api.put(`/Users/${id}`, data)
+    }else{
+      await api.post('/Users', data)
+    }
     navigate('/')
   };
+
+  useEffect(()=>{
+    if(id){
+      api.get(`/Users/${id}`).then((res)=>{
+      // console.log(res)
+      Object.keys(res.data).map((key)=>{
+        setValue(key, res.data[key])
+      })
+    })
+    }
+  }, [id, setValue])
 
   return (
     // <div className="border-2 m-10 text-center">

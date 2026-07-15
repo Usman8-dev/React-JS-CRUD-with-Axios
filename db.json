@@ -1,11 +1,11 @@
 {
   "Users": [
     {
-      "id": "1",
-      "name": "Muhammad Usman",
+      "name": "Muhammad Usman.",
       "username": "usman",
       "email": "usman@gmail.com",
-      "age": "24"
+      "age": 24,
+      "id": "1"
     },
     {
       "id": "2",
@@ -29,11 +29,11 @@
       "age": "22"
     },
     {
-      "id": "5",
-      "name": "Hamza Tariq",
-      "username": "hamzat",
+      "age": 29,
       "email": "hamza.tariq@gmail.com",
-      "age": "29"
+      "username": "hamzat",
+      "name": "Hamza Tariq+",
+      "id": "5"
     },
     {
       "id": "6",
@@ -109,14 +109,14 @@
       "name": "Fredericka Hawkins",
       "username": "cinypabyha",
       "email": "vezuzeset@mailinator.com",
-      "age": 77,
+      "age": 76,
       "id": "uNXtZ57mZME"
     },
     {
-      "name": "August Ellis",
+      "name": "August Ellis peter",
       "username": "nujab",
       "email": "zycu@mailinator.com",
-      "age": 29,
+      "age": 19,
       "id": "PzKZYNAviF4"
     }
   ],
