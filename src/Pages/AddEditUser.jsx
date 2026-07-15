@@ -9,7 +9,8 @@ import { InputNumber } from "primereact/inputnumber";
 import { Button } from "primereact/button";
 import { useEffect } from "react";
 
-function AddEditUser() {
+
+function AddEditUser({Toast}) {
   const navigate = useNavigate();
   const {id} = useParams();
 

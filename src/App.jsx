@@ -3,15 +3,22 @@ import UserList from "./Pages/UserList";
 import AddEditUser from "./Pages/AddEditUser";
 import MainLayout from "./Layout/MainLayout";
 
+import { useRef } from "react";
+import { ConfirmDialog } from "primereact/confirmdialog";
+import { Toast } from "primereact/toast";
+
 function App() {
+  const toast = useRef(null);
   return (
     <div>
       <BrowserRouter>
+        <Toast ref={toast} />
+        <ConfirmDialog />
         <Routes>
-          <Route element={<MainLayout/>}>
-            <Route path="/" element={<UserList />} />
-            <Route path="/add" element={<AddEditUser />} />
-            <Route path="/edit/:id" element={<AddEditUser />} />
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<UserList Toast={toast} />} />
+            <Route path="/add" element={<AddEditUser Toast={toast}/>} />
+            <Route path="/edit/:id" element={<AddEditUser Toast={toast}/>} />
           </Route>
         </Routes>
       </BrowserRouter>
