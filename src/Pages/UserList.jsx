@@ -10,9 +10,9 @@ import { Button } from "primereact/button";
 
 import { useNavigate } from "react-router-dom";
 
-import { confirmDialog } from 'primereact/confirmdialog';
+import { confirmDialog } from "primereact/confirmdialog";
 
-function UserList({Toast}) {
+function UserList({ toast }) {
   const [users, setUsers] = useState([]);
 
   const navigate = useNavigate();
@@ -26,18 +26,24 @@ function UserList({Toast}) {
     fetchData();
   }, []);
 
-  const deleteUser = (id)=>{
+  const deleteUser = (id) => {
     confirmDialog({
-            message: 'Do you want to delete this record?',
-            header: 'Delete Confirmation',
-            icon: 'pi pi-info-circle',
-            acceptClassName: 'p-button-danger',
-            accept: async ()=>{
-              await api.delete(`/Users/${id}`)
-              fetchData();
-            }
+      message: "Do you want to delete this record?",
+      header: "Delete Confirmation",
+      icon: "pi pi-info-circle",
+      acceptClassName: "p-button-danger",
+      accept: async () => {
+        await api.delete(`/Users/${id}`);
+        toast.current.show({
+          severity: "success",
+          summary: "Deleted",
+          detail: "User deleted Successfully",
+          life: 3000,
         });
-  }
+        fetchData();
+      },
+    });
+  };
 
   const ActionTemplate = (rowData) => (
     <>
@@ -51,7 +57,7 @@ function UserList({Toast}) {
         icon="pi pi-trash"
         title="Delete"
         className="p-button-rounded p-button-danger"
-        onClick={()=> deleteUser(rowData.id)}
+        onClick={() => deleteUser(rowData.id)}
       />
     </>
   );

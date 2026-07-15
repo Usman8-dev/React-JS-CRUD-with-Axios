@@ -9,10 +9,9 @@ import { InputNumber } from "primereact/inputnumber";
 import { Button } from "primereact/button";
 import { useEffect } from "react";
 
-
-function AddEditUser({Toast}) {
+function AddEditUser({ toast }) {
   const navigate = useNavigate();
-  const {id} = useParams();
+  const { id } = useParams();
 
   const {
     register,
@@ -25,24 +24,38 @@ function AddEditUser({Toast}) {
   });
 
   const OnSubmit = async (data) => {
-    if(id){
-      await api.put(`/Users/${id}`, data)
-    }else{
-      await api.post('/Users', data)
+    if (id) {
+      await api.put(`/Users/${id}`, data);
+      toast.current.show({
+        severity: "success",
+        summary: "Updated",
+        detail: "User updated Successfully",
+        life:3000,
+      });
+    } else {
+      await api.post("/Users", data);
+      toast.current.show({
+        severity: "success",
+        summary: "Added",
+        detail: "User added Successfully",
+        life:3000,
+      });
     }
-    navigate('/')
+    navigate("/");
+    // setTimeout(() => navigate("/"), 2000);
+
   };
 
-  useEffect(()=>{
-    if(id){
-      api.get(`/Users/${id}`).then((res)=>{
-      // console.log(res)
-      Object.keys(res.data).map((key)=>{
-        setValue(key, res.data[key])
-      })
-    })
+  useEffect(() => {
+    if (id) {
+      api.get(`/Users/${id}`).then((res) => {
+        // console.log(res)
+        Object.keys(res.data).map((key) => {
+          setValue(key, res.data[key]);
+        });
+      });
     }
-  }, [id, setValue])
+  }, [id, setValue]);
 
   return (
     // <div className="border-2 m-10 text-center">
@@ -73,7 +86,7 @@ function AddEditUser({Toast}) {
 
     <div className="max-w-md mx-auto mt-10 bg-slate-700 border border-slate-800 rounded-xl p-8">
       <h2 className="text-slate-100 text-2xl font-semibold text-center mb-6">
-        {id ? 'Edit User' : 'Add User'}
+        {id ? "Edit User" : "Add User"}
       </h2>
 
       <div className="flex flex-col gap-5">
@@ -131,7 +144,7 @@ function AddEditUser({Toast}) {
 
                   value={field.value}
                   onValueChange={(e) => field.onChange(e.value)}
-                  className={errors.age ? 'p-invalid' : ''}
+                  className={errors.age ? "p-invalid" : ""}
                 />
               )}
             />

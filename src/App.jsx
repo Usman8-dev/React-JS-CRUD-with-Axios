@@ -5,7 +5,7 @@ import MainLayout from "./Layout/MainLayout";
 
 import { useRef } from "react";
 import { ConfirmDialog } from "primereact/confirmdialog";
-import { Toast } from "primereact/toast";
+import { Toast } from 'primereact/toast';
 
 function App() {
   const toast = useRef(null);
@@ -16,9 +16,9 @@ function App() {
         <ConfirmDialog />
         <Routes>
           <Route element={<MainLayout />}>
-            <Route path="/" element={<UserList Toast={toast} />} />
-            <Route path="/add" element={<AddEditUser Toast={toast}/>} />
-            <Route path="/edit/:id" element={<AddEditUser Toast={toast}/>} />
+            <Route path="/" element={<UserList toast={toast} />} />
+            <Route path="/add" element={<AddEditUser toast={toast}/>} />
+            <Route path="/edit/:id" element={<AddEditUser toast={toast}/>} />
           </Route>
         </Routes>
       </BrowserRouter>
