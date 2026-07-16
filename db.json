@@ -120,11 +120,18 @@
       "id": "iMK0C6y3C-I"
     },
     {
-      "name": "Mason Snider++",
-      "username": "kahedeq",
-      "email": "vabehoder@mailinator.com",
-      "age": 11,
-      "id": "dmjPbpXUxUs"
+      "name": "Test User",
+      "username": "test plus",
+      "email": "test@gmail.com",
+      "age": 42,
+      "id": "8l72z_QsFKs"
+    },
+    {
+      "name": "shahzaib",
+      "username": "shah",
+      "email": "shah@gmail.com",
+      "age": 18,
+      "id": "knrZJlgezTE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
